@@ -1,0 +1,11 @@
+.carousel-item img {
+    height: auto;
+    max-height: 100vh;
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-item img {
+      max-height: 70vh; 
+    }
+  }
+  

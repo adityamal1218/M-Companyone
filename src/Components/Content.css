@@ -1,0 +1,73 @@
+
+.adi {
+  height: 110vh;
+  width: 100%;
+  background-color: rgb(227, 227, 197);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adi h3 {
+  color: black;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  text-align: center; 
+}
+
+.adi p {
+  color: black;
+  margin-top: 20px;
+  text-align: center; 
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: rgb(148, 85, 208);
+  color: black;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.adi2 {
+  display: inline-block;
+  color: rgb(215, 137, 137);
+  animation: marquee 50s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .adi h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  .adi p {
+    margin-top: 20px;
+  }
+
+  .btn {
+    margin-top: 30px;
+  }
+
+  .marquee-container {
+    width: 100%;
+  }
+}
